@@ -26,18 +26,15 @@ export const splitArr = (val) => {
 
 const bigNumbersNamesFormat = (num, i) => {
 
-    const numStr = num[num.length-1]
+    const numStr = +num[num.length-1]
     const numStrDozens = +(((num.length>1)?num[num.length-2]:"") + num[num.length-1])
     debugger
     num = Number(num)
     if (num !== 0) {
-        if (+numStr > 1 && +numStr < 5 && numStrDozens!==11 && numStrDozens!==12) {
-            return bigNumbersNames[i][1]
-        }
-        if (num === 1 ) {
+        if (numStr === 1 && numStrDozens!==11 && numStrDozens!==12) {
             return bigNumbersNames[i][0]
         }
-        if (num > 1 && num < 5) {
+        if (numStr > 1 && numStr < 5 && numStrDozens!==12 && numStrDozens!==13 && numStrDozens!==14) {debugger
             return bigNumbersNames[i][1]
         }
         return bigNumbersNames[i][2]
