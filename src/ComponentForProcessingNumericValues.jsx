@@ -1,25 +1,6 @@
 import React, {useState} from 'react';
 import './ComponentForProcessingNumericValues.css';
-import {
-    billionProcessing,
-    dozensProcessing,
-    hundredsOfbillionsProcessing,
-    hundredsOfmillionsProcessing,
-    hundredsOfquadrillionProcessing,
-    hundredsOfThousandsProcessing,
-    hundredsOftrillionsProcessing,
-    hundredsProcessing,
-    millionsProcessing,
-    quadrillionProcessing, SimpleValue,
-    tensOfbillionProcessing,
-    tensOfmillionsProcessing,
-    tensOfquadrillionsProcessing,
-    tensOfThousandsProcessing,
-    tensOftrillionsProcessing,
-    thousandsProcessing, translate,
-    trillionProcessing,
-    unitProcessing
-} from "./customValue";
+import { translate} from "./customValue";
 
 export function ComponentForProcessingNumericValues() {
 
